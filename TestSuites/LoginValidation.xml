@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel = "tests" name="Suite">
+
+<groups>
+	<run>
+		<include name="LoginValidation"/>
+	</run>
+</groups>
+
+  <test thread-count="5" name="Login Validation Test">
+    <classes>
+      <class name="omkar.TestComponents.LoginPage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
